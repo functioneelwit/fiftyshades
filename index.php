@@ -124,6 +124,20 @@ if( $_GET['q'] )
             margin: 5px;
         }
 
+        .thanks
+        {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .github
+        {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
     </style>
 
     <script type="text/javascript" src="ntc.js"></script>
@@ -182,6 +196,10 @@ if( $_GET['q'] )
     }
 
 ?>
+
+
+<small class="thanks">Thanks <a href="http://chir.ag/projects/ntc">Chirag Mehta</a>!</small>
+<small class="github"><a href="https://github.com/functioneelwit/fiftyshades">Project on Github</a></small>
 
 
 </body>
