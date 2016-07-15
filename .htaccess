@@ -1,0 +1,9 @@
+RewriteEngine on
+
+# If the file or directory doesn't exist, toss it off to index.php
+# Log failures, add RewriteCond's for those..
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# QSA = Query String Append (that is, don't ditch the extra parameters)
+RewriteRule ^(.*)$ index.php?q=$1 [QSA]
+
